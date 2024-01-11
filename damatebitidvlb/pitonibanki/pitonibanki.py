@@ -15,22 +15,23 @@ elif a=="log in":
 
 else: print("404 that's an error") 
 
+if a=="log in" or a=="Create new account":
 
-b=input("Do you wanna deposit or withdraw your money?")
+    b=input("Do you wanna deposit or withdraw your money?")
 
-money=1000
+    money=1000
 
-if b==("Deposit"):
+    if b==("Deposit"):
 
-    c=input("How much do you want deposit?")
-    print("On card You now have " ,(int(c)+int(money)))
+        c=input("How much do you want deposit?")
+        print("On card You now have " ,(int(c)+int(money)))
 
-elif b==("Withdraw"):
-    c=input("How much do you want Withdraw?")
-    if int(c)>1000:
-        print("404 that's an error")
-    else:
-        print("On card You now have " ,(int(money)-int(c)))
+    elif b==("Withdraw"):
+        c=input("How much do you want Withdraw?")
+        if int(c)>1000:
+            print("404 that's an error")
+        else:
+            print("On card You now have " ,(int(money)-int(c)))
 
 
 
